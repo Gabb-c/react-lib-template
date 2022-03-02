@@ -1,0 +1,8 @@
+{
+  "name": "react-lib-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Gabb-c/react-lib-template.git",
+  "author": "Gabb-c <gdgabrieldacunha71@gmail.com>",
+  "license": "MIT"
+}
