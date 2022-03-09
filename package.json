@@ -23,11 +23,10 @@
     "run:dev": "NODE_OPTIONS='--trace-deprecation --abort-on-uncaught-exception' tsnd --respawn --transpile-only --rs --pretty --log-error --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\"",
     "storybook": "start-storybook -p 6006",
     "storybook-docs": "start-storybook --docs --no-manager-cache",
-    "test:ci": "jest --ci --runInBand --bail --detectOpenHandles --errorOnDeprecated",
+    "test:ci": "jest --ci --runInBand --bail --detectOpenHandles --errorOnDeprecated --passWithNoTests",
     "test:cov": "jest --coverage",
-    "test:dev": "jest --verbose --colors --expand --maxWorkers=50% --detectOpenHandles --errorOnDeprecated --bail",
-    "test:types": "yarn tsd",
-    "test:watch": "jest --watch --verbose --colors --expand --detectOpenHandles --errorOnDeprecated --bail --maxWorkers=25%"
+    "test:dev": "jest --verbose --colors --expand --maxWorkers=50% --detectOpenHandles --errorOnDeprecated --bail --passWithNoTests",
+    "test:watch": "jest --watch --verbose --colors --expand --detectOpenHandles --errorOnDeprecated --bail --maxWorkers=25% --passWithNoTests"
   },
   "dependencies": {},
   "devDependencies": {
