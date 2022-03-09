@@ -1,2 +1,1 @@
-export {};
-console.log('My Lib!');
+export * from './components';
